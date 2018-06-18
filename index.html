@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="reset.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <div id="dialog" class="modal">
+
+        <div class="modal-content">
+            <div class="header">
+                <span id="close" class="close">&times;</span>
+                <div class="clearfix"></div>
+            </div>
+            
+
+            <p class="heading">Get a newsletter!</p>
+            <form action="#" method="post" onsubmit="return validateModal()">
+                <p>
+                    <label for="your-name">Your name:</label><br>
+                    <input id="your-name" name="yourName" type="text">
+                </p>
+                <p>
+                    <label for="e-mail">Your E-mail:</label><br>
+                    <input id="e-mail" name="email" type="email">
+                </p>
+                <button>Subscribe!</button>
+                <p id="message" class="error-msg"></p>
+            </form>
+        </div>
+        
+    </div>
+
+    <header>
+        <h1>The Site</h1>
+        <nav>
+            <ul class="top-nav">
+                <li>menu link</li>
+                <li>menu link</li>
+                <li>menu link</li>
+            </ul>
+            <div id="navButton" class="show-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul id="bottomNav" class="bottom-nav">
+                <li>menu link</li>
+                <li>menu link</li>
+                <li>menu link</li>
+                <li>menu link</li>
+            </ul>          
+        </nav>
+        <div class="clearfix"></div>
+        <ul id="mobNav" class="mob-nav">
+            <li>menu link</li>
+            <li>menu link</li>
+            <li>menu link</li>
+            <li>menu link</li>
+        </ul> 
+    </header>
+
+    <main>
+        <div class="wrapper">
+        <div class="leftSide">
+            <article>
+                <h2>Aenean ac diam nec neque fringilla</h2>
+                <p>
+                    Integer eget mauris et urna pulvinar consectetur hendrerit eget mauris. Praesent a interdum justo. Aenean ac diam nec neque fringilla cursus. Donec iaculis tortor in nunc vehicula rutrum. Integer malesuada mollis ligula at varius.
+                </p>
+                <p>
+                    Integer eget mauris et urna pulvinar consectetur hendrerit eget mauris. Praesent a interdum justo. Aenean ac diam nec neque fringilla cursus. Donec iaculis tortor in nunc vehicula rutrum. Integer malesuada mollis ligula at varius.
+                </p>
+                <p>
+                    Integer eget mauris et urna pulvinar consectetur hendrerit eget mauris. Praesent a interdum justo. Aenean ac diam nec neque fringilla cursus. Donec iaculis tortor in nunc vehicula rutrum. Integer malesuada mollis ligula at varius.
+                </p>
+                <p>
+                    Integer eget mauris et urna pulvinar consectetur hendrerit eget mauris. Praesent a interdum justo. Aenean ac diam nec neque fringilla cursus. Donec iaculis tortor in nunc vehicula rutrum. Integer malesuada mollis ligula at varius.
+                </p>
+                <p>
+                    Integer eget mauris et urna pulvinar consectetur hendrerit eget mauris. Praesent a interdum justo. Aenean ac diam nec neque fringilla cursus. Donec iaculis tortor in nunc vehicula rutrum. Integer malesuada mollis ligula at varius.
+                </p>
+            </article>
+
+            <section>
+                <p>Integer eget mauris et urna pulvinar consectetur hendrerit eget mauris. Praesent a interdum justo. Aenean ac diam nec neque fringilla cursus. Donec iaculis tortor in nunc vehicula rutrum. Integer malesuada mollis ligula at varius. Dorce pila meracone.</p>
+            </section>
+
+            <section>
+                <h3>Aenean ac diam nec neque</h3>
+                <h4>Integer eget mauris et urna </h4>
+                <h4>Pulvinar consectetur hendrerit</h4>
+                <h4>Oget mauris praesent</h4>
+            </section>
+        </div>
+
+        <div class="rightSide">
+            <h3>Aenean ac diam nec neque fringilla</h3>
+            <p>Integer eget mauris et urna pulvinar consectetur hendrerit eget mauris. Praesent a interdum justo. Aenean ac diam nec neque fringilla cursus. Donec iaculis tortor in nunc vehicula rutrum. Integer malesuada mollis ligula at varius.</p>
+            <form action="#" method="post" onsubmit="return validateForm()">
+                <label for="firstName">First name:</label><br>
+                <input id="firstName" type="text" name="fName" placeholder="Enter your name"><br>
+                <label for="lastName">Last name:</label><br>
+                <input id="lastName" type="text" name="lName" placeholder="Enter your last name"><br>
+                <label for="textarea">Message</label><br>
+                <textarea id="textarea" rows="5"></textarea><br>
+                <button id="submit" type="submit">Submit</button>
+                <p id="error"></p>
+            </form>
+        </div>
+
+        <div class="paragraphs">
+            <p>Integer eget mauris et urna pulvinar consectetur hendrerit eget mauris. Praesent a interdum justo. Aenean ac diam nec neque fringilla cursus. Donec iaculis tortor in nunc vehicula rutrum. Integer malesuada mollis ligula at varius.</p>
+            <p>Integer eget mauris et urna pulvinar consectetur hendrerit eget mauris. Praesent a interdum justo. Aenean ac diam nec neque fringilla cursus. Donec iaculis tortor in nunc vehicula rutrum. Integer malesuada mollis ligula at varius.</p>
+            <p>Integer eget mauris et urna pulvinar consectetur hendrerit eget mauris. Praesent a interdum justo. Aenean ac diam nec neque fringilla cursus. Donec iaculis tortor in nunc vehicula rutrum. Integer malesuada mollis ligula at varius.</p>
+        </div>
+    </div>
+    </main>
+
+    <footer>
+        <nav>
+            <ul>
+                <li>menu link</li>
+                <li>menu link</li>
+                <li>menu link</li>
+                <li>menu link</li>
+                <li>menu link</li>
+                <li>menu link</li>
+            </ul>
+        </nav>
+        <p>Nullam mattis luctus dolor, sed gravida tellus volutpat vel. Maecenas mollis augue sed tortor molestie ornare. Proin dapibus dictum eros ut adipiscing. Nullam ultrices dolor ut tristique sollicitudin. Integer scelerisque urna est, sit amet aliquet sapien accumsan quis. Nullam luctus semper vulputate. Nulla egestas urna nec tellus ultrices elementum. Proin dapibus dictum eros ut adipiscing. Nullam ultrices dolor ut tristique sollicitudin. Integer scelerisque</p>
+        <span>The Site</span>
+        <div class="clearfix"></div>
+    </footer>
+
+    <script src="javascript.js"></script>
+</body>
+</html>
